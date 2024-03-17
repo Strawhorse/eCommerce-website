@@ -16,6 +16,9 @@ Driver problem resolved using: https://stackoverflow.com/questions/33123985/cann
 
 https://www.reddit.com/r/SpringBoot/comments/1b16juw/unable_to_run_spring_boot/
 
+https://spring.io/guides/gs/accessing-data-mysql
+
+
 
 
 
