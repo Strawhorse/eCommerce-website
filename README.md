@@ -6,3 +6,5 @@ Built using Java 17, Spring Boot 3.2.3, Hibernate, SQL Server, and testing with 
 
 Some assistance from: https://www.youtube.com/watch?v=AYCRR70gH3w&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz&index=2
 
+Also found useful information about adding dependencies using Maven on start.spring.io
+
