@@ -19,6 +19,7 @@ https://www.reddit.com/r/SpringBoot/comments/1b16juw/unable_to_run_spring_boot/
 https://spring.io/guides/gs/accessing-data-mysql
 
 
+Currently stopped here: https://www.youtube.com/watch?v=oq9AKc-Qnlg&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz
 
 
 
