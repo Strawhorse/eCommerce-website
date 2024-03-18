@@ -3,15 +3,13 @@
 //Entities in JPA are nothing but POJOs representing data that can be persisted in the database
 
 
-
 package com.jbr.eCommercesite.model;
 
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
-import java.util.LinkedHashSet;
 import java.util.List;
-import java.util.Set;
+
 
 @Entity
 @Table(name = "local_user")
