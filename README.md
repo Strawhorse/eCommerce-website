@@ -19,11 +19,13 @@ https://www.reddit.com/r/SpringBoot/comments/1b16juw/unable_to_run_spring_boot/
 https://spring.io/guides/gs/accessing-data-mysql
 
 
-Currently stopped here: https://www.youtube.com/watch?v=oq9AKc-Qnlg&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz
+Currently stopped here: https://www.youtube.com/watch?v=QWk-cq48ZAY&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz&index=4
 
 
 Interesting to apply the use of Java maps to store key-value pairs for inserting and deleting from SQL:
 https://www.geeksforgeeks.org/map-interface-java-examples/
 
 
+Error with datasources resolved with: https://stackoverflow.com/questions/14356148/intellij-idea-specify-datasource-for-jpa-validation
 
+![img.png](img.png)
