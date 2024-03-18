@@ -22,5 +22,8 @@ https://spring.io/guides/gs/accessing-data-mysql
 Currently stopped here: https://www.youtube.com/watch?v=oq9AKc-Qnlg&list=PLtBt-olBU9cTm-5SdTy3mjaSEnHglK-Mz
 
 
+Interesting to apply the use of Java maps to store key-value pairs for inserting and deleting from SQL:
+https://www.geeksforgeeks.org/map-interface-java-examples/
+
 
 
