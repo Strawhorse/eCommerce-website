@@ -37,3 +37,7 @@ Good information on websockets: https://www.baeldung.com/java-websockets
 
 Can now send class objects to the registration authorisation endpoint for posting requests to register users
 
+Good info on interfaces: https://www.geeksforgeeks.org/interfaces-in-java/
+
+
+Beginning to understand the use of the DAO to separate the business logic (registering) from the actual data its using (the user info)
