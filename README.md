@@ -33,3 +33,7 @@ Error with datasources resolved with: https://stackoverflow.com/questions/143561
 
 Good information on websockets: https://www.baeldung.com/java-websockets
 
+![img_1.png](img_1.png)
+
+Can now send class objects to the registration authorisation endpoint for posting requests to register users
+
