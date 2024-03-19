@@ -29,3 +29,7 @@ https://www.geeksforgeeks.org/map-interface-java-examples/
 Error with datasources resolved with: https://stackoverflow.com/questions/14356148/intellij-idea-specify-datasource-for-jpa-validation
 
 ![img.png](img.png)
+
+
+Good information on websockets: https://www.baeldung.com/java-websockets
+
