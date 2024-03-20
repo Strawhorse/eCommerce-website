@@ -32,7 +32,9 @@ public class UserService {
 //        have to encrypt password
         user.setPassword(registrationBody.getPassword());
 
-        return localUserDAO.save(user);
+        user = localUserDAO.save(user);
+
+        return user;
 
     }
 

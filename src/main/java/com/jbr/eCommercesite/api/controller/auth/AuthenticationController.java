@@ -20,6 +20,11 @@ public class AuthenticationController {
         this.userService = userService;
     }
 
+
+
+
+
+
     //    method to register user so the return type is a boolean - just set it to void for now until we complete api
 //    can test doing a POST request on Postman to http://localhost:8080/auth/register
 //    payload below will be a RegistrationBody class and then set to Body -> raw -> json and send {} object with RegistrationBody parameters inside
