@@ -8,28 +8,28 @@ public class RegistrationBody {
 
     @NotNull
     @NotBlank
-    @Min( 3) @Max(120)
+    @Size(min = 3, max = 120)
     private String username;
 
     @NotNull
     @NotBlank
     @Email
-    @Min( 3) @Max(120)
+    @Size(min = 3, max = 120)
     private String email;
 
     @NotNull
     @NotBlank
-    @Min( 3) @Max(120)
+    @Size(min = 3, max = 120)
     private String password;
 
     @NotNull
     @NotBlank
-    @Min( 3) @Max(120)
+    @Size(min = 3, max = 120)
     private String firstName;
 
     @NotNull
     @NotBlank
-    @Min( 3) @Max(120)
+    @Size(min = 3, max = 120)
     private String lastName;
 
 
