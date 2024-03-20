@@ -2,6 +2,7 @@ package com.jbr.eCommercesite.service;
 
 
 import com.jbr.eCommercesite.api.model.RegistrationBody;
+import com.jbr.eCommercesite.exception.UserAlreadyExistsException;
 import com.jbr.eCommercesite.model.LocalUser;
 import com.jbr.eCommercesite.model.dao.LocalUserDAO;
 import org.springframework.stereotype.Service;
@@ -19,7 +20,12 @@ public class UserService {
 
 //    service for creating new instances of the LocalUser to add to database
 
-    public LocalUser registeredUser(RegistrationBody registrationBody) {
+    public LocalUser registeredUser(RegistrationBody registrationBody)  throws UserAlreadyExistsException {
+
+        if (localUserDAO.findByEmailIgnoreCase(registrationBody.getEmail()).isPresent()
+            || localUserDAO.findByUsernameIgnoreCase(registrationBody.getUsername()).isPresent()) {
+            throw new UserAlreadyExistsException();
+        }
 
         LocalUser user = new LocalUser();
         user.setUsername(registrationBody.getUsername());

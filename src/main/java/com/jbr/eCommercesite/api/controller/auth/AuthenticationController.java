@@ -2,12 +2,11 @@ package com.jbr.eCommercesite.api.controller.auth;
 
 
 import com.jbr.eCommercesite.api.model.RegistrationBody;
+import com.jbr.eCommercesite.exception.UserAlreadyExistsException;
 import com.jbr.eCommercesite.service.UserService;
-import org.apache.catalina.User;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 
 @RestController
@@ -31,10 +30,15 @@ public class AuthenticationController {
 //    then uses the userService object to register the user in the database
 
     @PostMapping("/register")
-    public void registeredUser(@RequestBody RegistrationBody registrationBody) {
-        userService.registeredUser(registrationBody);
+    public ResponseEntity registeredUser(@RequestBody RegistrationBody registrationBody) {
+        try {
+            userService.registeredUser(registrationBody);
+            return ResponseEntity.ok().build();
+        } catch (UserAlreadyExistsException e) {
+            return ResponseEntity.status(HttpStatus.CONFLICT).build();
+        }
 
-        System.out.println("... and it worked...");
+//        in the above method, we returned a type of ResponseEntity which allows you to edit the http responses to requests
 
     }
 
