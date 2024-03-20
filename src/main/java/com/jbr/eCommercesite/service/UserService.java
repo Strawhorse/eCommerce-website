@@ -5,6 +5,7 @@ import com.jbr.eCommercesite.api.model.RegistrationBody;
 import com.jbr.eCommercesite.exception.UserAlreadyExistsException;
 import com.jbr.eCommercesite.model.LocalUser;
 import com.jbr.eCommercesite.model.dao.LocalUserDAO;
+import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 
 @Service
