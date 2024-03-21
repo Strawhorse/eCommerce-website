@@ -14,12 +14,12 @@ public class RegistrationBody {
     @NotNull
     @NotBlank
     @Email
-    @Size(min = 3, max = 120)
+    @Size(min = 3, max = 320)
     private String email;
 
     @NotNull
     @NotBlank
-    @Size(min = 3, max = 120)
+    @Size(min = 3, max = 1000)
     private String password;
 
     @NotNull
@@ -31,6 +31,9 @@ public class RegistrationBody {
     @NotBlank
     @Size(min = 3, max = 120)
     private String lastName;
+
+    public RegistrationBody() {
+    }
 
 
     public String getUsername() {
