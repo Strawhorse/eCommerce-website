@@ -41,3 +41,8 @@ Good info on interfaces: https://www.geeksforgeeks.org/interfaces-in-java/
 
 
 Beginning to understand the use of the DAO to separate the business logic (registering) from the actual data its using (the user info)
+
+
+Good article on JSON web tokens use in Java: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html
+
+
