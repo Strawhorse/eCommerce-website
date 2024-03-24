@@ -5,7 +5,6 @@ import com.jbr.eCommercesite.api.model.RegistrationBody;
 import com.jbr.eCommercesite.exception.UserAlreadyExistsException;
 import com.jbr.eCommercesite.model.LocalUser;
 import com.jbr.eCommercesite.model.dao.LocalUserDAO;
-import jakarta.validation.Valid;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -14,9 +13,12 @@ public class UserService {
 //    When Spring creates this service it will inject the Repository interface (and its methods) into the class
 
     private LocalUserDAO localUserDAO;
+    private EncryptionService encryptionService;
 
-    public UserService(LocalUserDAO localUserDAO) {
+
+    public UserService(LocalUserDAO localUserDAO, EncryptionService encryptionService) {
         this.localUserDAO = localUserDAO;
+        this.encryptionService = encryptionService;
     }
 
 //    service for creating new instances of the LocalUser to add to database
@@ -39,8 +41,8 @@ public class UserService {
         user.setEmail(registrationBody.getEmail());
 
 
-//        have to encrypt password
-        user.setPassword(registrationBody.getPassword());
+//        This now uses the encryption password service above to encrypt the password from above
+        user.setPassword(encryptionService.encryptPassword(registrationBody.getPassword()));
 
         user = localUserDAO.save(user);
 

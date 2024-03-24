@@ -7,10 +7,12 @@ package com.jbr.eCommercesite.service;
 import jakarta.annotation.PostConstruct;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.bcrypt.BCrypt;
+import org.springframework.stereotype.Component;
 
+@Component
 public class EncryptionService {
 
-    @Value("${encryption, salt, rounds}")
+    @Value("${encryption.salt.rounds}")
     private int saltRoundings;
 
 //    when you generate salt to be used when hashing, it comes out as a string

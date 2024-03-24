@@ -26,7 +26,7 @@ Interesting to apply the use of Java maps to store key-value pairs for inserting
 https://www.geeksforgeeks.org/map-interface-java-examples/
 
 
-Error with datasources resolved with: https://stackoverflow.com/questions/14356148/intellij-idea-specify-datasource-for-jpa-validation
+Error with data sources resolved with: https://stackoverflow.com/questions/14356148/intellij-idea-specify-datasource-for-jpa-validation
 
 ![img.png](img.png)
 
@@ -44,5 +44,9 @@ Beginning to understand the use of the DAO to separate the business logic (regis
 
 
 Good article on JSON web tokens use in Java: https://cheatsheetseries.owasp.org/cheatsheets/JSON_Web_Token_for_Java_Cheat_Sheet.html
+And here: https://www.loginradius.com/blog/engineering/cookie-based-vs-cookieless-authentication/
+
+For help with solving the default password issue Spring was producing: https://docs.spring.io/spring-boot/docs/current/reference/html/web.html
+
 
 
