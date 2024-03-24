@@ -21,6 +21,9 @@ public class UserService {
 
 //    service for creating new instances of the LocalUser to add to database
 
+
+
+
     public LocalUser registeredUser(RegistrationBody registrationBody)  throws UserAlreadyExistsException {
 
         if (localUserDAO.findByEmailIgnoreCase(registrationBody.getEmail()).isPresent()
