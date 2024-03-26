@@ -45,9 +45,12 @@ public class UserService {
         user.setPassword(encryptionService.encryptPassword(registrationBody.getPassword()));
 
         user = localUserDAO.save(user);
-
         return user;
 
     }
+
+//    method to return a string for the JWT
+
+    public String loginUser()
 
 }
